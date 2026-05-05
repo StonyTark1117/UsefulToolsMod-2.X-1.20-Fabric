@@ -1,0 +1,58 @@
+{
+  "usefultoolsmod:ecto_set": {
+    "criteria": {
+      "has_leggings": "2026-05-04 17:14:13 -0700",
+      "has_helmet": "2026-05-04 17:14:13 -0700",
+      "has_chestplate": "2026-05-04 17:14:13 -0700",
+      "has_boots": "2026-05-04 17:14:13 -0700"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-05-04 17:14:13 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-05-04 17:15:56 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:ghast_tear_set": {
+    "criteria": {
+      "has_item_5": "2026-05-04 17:15:53 -0700",
+      "has_item_6": "2026-05-04 17:15:51 -0700",
+      "has_item_7": "2026-05-04 17:15:49 -0700",
+      "has_item_8": "2026-05-04 17:15:48 -0700"
+    },
+    "done": false
+  },
+  "usefultoolsmod:ghost_companion": {
+    "criteria": {
+      "ghost_nearby_again": "2026-05-04 17:14:32 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:ghast_tear_craft": {
+    "criteria": {
+      "has_item_8": "2026-05-04 17:15:48 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:river": "2026-05-04 17:16:56 -0700",
+      "minecraft:plains": "2026-05-04 17:14:15 -0700"
+    },
+    "done": false
+  },
+  "usefultoolsmod:ghost_encounter": {
+    "criteria": {
+      "ghost_nearby": "2026-05-04 17:14:32 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

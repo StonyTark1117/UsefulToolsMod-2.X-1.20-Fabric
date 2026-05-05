@@ -1,0 +1,99 @@
+plugins {
+	id 'fabric-loom' version '1.15-SNAPSHOT'
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/usefultoolsmod.accesswidener")
+
+	runs {
+		datagen {
+			inherit server
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+			vmArg "-Dfabric-api.datagen.modid=usefultoolsmod"
+			runDir "build/datagen"
+		}
+	}
+}
+
+sourceSets {
+	main {
+		resources {
+			srcDirs += ["src/main/generated"]
+		}
+	}
+}
+
+repositories {
+	maven { url "https://maven.terraformersmc.com/" }
+	maven { url "https://maven.shedaniel.me/" }
+	maven { url "https://maven.bai.lol" }
+	maven { url "https://maven.blamejared.com" }
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// JEI — optional; compile against the fabric jar (excludes avoid unmapped transitive deps)
+	modCompileOnly("mezz.jei:jei-1.20.1-fabric:15.2.0.27") {
+		exclude group: "mezz.jei", module: "jei-1.20.1-common-api"
+		exclude group: "mezz.jei", module: "jei-1.20.1-common"
+		exclude group: "mezz.jei", module: "jei-1.20.1-core"
+		exclude group: "mezz.jei", module: "jei-1.20.1-lib"
+		exclude group: "mezz.jei", module: "jei-1.20.1-gui"
+	}
+	// Full JEI jar in dev runtime for testing (Loom remaps the top-level artifact)
+	modLocalRuntime("mezz.jei:jei-1.20.1-fabric:15.2.0.27")
+
+	// WTHIT — optional; compile against the API, full mod in dev runtime for testing
+	modCompileOnly  "mcp.mobius.waila:wthit-api:fabric-8.16.3"
+	modLocalRuntime "mcp.mobius.waila:wthit:fabric-8.16.3"
+}
+
+processResources {
+	inputs.property "version", project.version
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 17
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.base.archivesName.get()}" }
+	}
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			artifact jar
+		}
+	}
+	repositories {
+		maven {
+			url "file://${project.projectDir}/mcmodsrepo"
+		}
+	}
+}

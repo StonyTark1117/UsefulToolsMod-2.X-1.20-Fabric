@@ -1,0 +1,7 @@
+// 1.20.1	2026-05-04T15:41:16.408969803	Useful Tools Mod/Tags for minecraft:item
+5de02a85b0d229b4d931a4d5f6877aef6e406aeb data/minecraft/tags/items/hoes.json
+ac5d52bbe3c1d6d8925355c7bcd6e8ba180c4192 data/minecraft/tags/items/pickaxes.json
+bdcf438bde7ebfef39487b7d3b2091230ccd87cb data/minecraft/tags/items/swords.json
+e80d2eda6225f22658c045e9e02ea7d7d3bb19eb data/minecraft/tags/items/axes.json
+2e468961f2ff7f667d8e052da92511bcdd695bdc data/minecraft/tags/items/shovels.json
+5b072fa6ff4009284f06a4d806537d17f14d0802 data/minecraft/tags/items/trimmable_armor.json

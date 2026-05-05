@@ -1,0 +1,13 @@
+// 1.20.1	2026-05-04T15:41:16.408774802	Useful Tools Mod/Tags for minecraft:block
+21b85e951b702620ab2514fa2fc4e1b00ed28dd3 data/usefultoolsmod/tags/blocks/needs_sem_tool.json
+468d0299635e826707a9aa84a389bb0dacb2ef5b data/minecraft/tags/blocks/needs_stone_tool.json
+21b85e951b702620ab2514fa2fc4e1b00ed28dd3 data/usefultoolsmod/tags/blocks/needs_job_tool.json
+add56ec52d2f5d8383ac10c0158bba11900cc541 data/minecraft/tags/blocks/mineable/pickaxe.json
+2f333d371069ab9b005a14b15527119b5dd26164 data/usefultoolsmod/tags/blocks/needs_rlapis_tool.json
+21b85e951b702620ab2514fa2fc4e1b00ed28dd3 data/usefultoolsmod/tags/blocks/needs_jem_tool.json
+0969f3c73d23b223f4267b64f2aeed2d04de182b data/usefultoolsmod/tags/blocks/needs_op_tool.json
+2f333d371069ab9b005a14b15527119b5dd26164 data/usefultoolsmod/tags/blocks/needs_hred_tool.json
+0969f3c73d23b223f4267b64f2aeed2d04de182b data/usefultoolsmod/tags/blocks/needs_sob_tool.json
+b1d5af32516218ea720bd5c7ebf87f01d4ba3673 data/minecraft/tags/blocks/needs_iron_tool.json
+2e4c0b959307ef076543fc8faedff45db571d640 data/minecraft/tags/blocks/needs_diamond_tool.json
+2f333d371069ab9b005a14b15527119b5dd26164 data/usefultoolsmod/tags/blocks/needs_rgold_tool.json

@@ -1,0 +1,40 @@
+{
+  "usefultoolsmod:ecto_set": {
+    "criteria": {
+      "has_leggings": "2026-05-04 16:34:40 -0700",
+      "has_helmet": "2026-05-04 16:34:43 -0700",
+      "has_chestplate": "2026-05-04 16:34:41 -0700",
+      "has_boots": "2026-05-04 16:34:35 -0700"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-05-04 16:30:43 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:ghost_companion": {
+    "criteria": {
+      "ghost_nearby_again": "2026-05-04 16:31:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:birch_forest": "2026-05-04 16:30:45 -0700",
+      "minecraft:beach": "2026-05-04 16:31:11 -0700",
+      "minecraft:river": "2026-05-04 16:33:20 -0700",
+      "minecraft:forest": "2026-05-04 16:32:43 -0700",
+      "minecraft:plains": "2026-05-04 16:33:36 -0700"
+    },
+    "done": false
+  },
+  "usefultoolsmod:ghost_encounter": {
+    "criteria": {
+      "ghost_nearby": "2026-05-04 16:31:04 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

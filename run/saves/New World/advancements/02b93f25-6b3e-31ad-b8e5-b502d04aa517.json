@@ -1,0 +1,24 @@
+{
+  "usefultoolsmod:ecto_set": {
+    "criteria": {
+      "has_leggings": "2026-05-04 16:38:02 -0700",
+      "has_helmet": "2026-05-04 16:38:02 -0700",
+      "has_chestplate": "2026-05-04 16:38:02 -0700",
+      "has_boots": "2026-05-04 16:38:02 -0700"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-05-04 16:38:02 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-05-04 16:38:04 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}

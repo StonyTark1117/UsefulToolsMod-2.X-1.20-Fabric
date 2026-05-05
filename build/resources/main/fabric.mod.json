@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "usefultoolsmod",
+  "version": "2.2.1-1.20.1-fabric",
+  "name": "Useful Tools Mod",
+  "description": "Adds many useful tools, weapons, and armor sets to Minecraft.",
+  "authors": ["stonytark"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/usefultoolsmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.stonytark.usefultoolsmod.UsefultoolsMod"
+    ],
+    "client": [
+      "com.stonytark.usefultoolsmod.UsefultoolsModClient"
+    ],
+    "fabric-datagen": [
+      "com.stonytark.usefultoolsmod.datagen.DataGenerators"
+    ],
+    "jei_mod_plugin": [
+      "com.stonytark.usefultoolsmod.compat.jei.UsefulToolsJeiPlugin"
+    ]
+  },
+  "accessWidener": "usefultoolsmod.accesswidener",
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "wthit": "*",
+    "jei": "*"
+  },
+  "custom": {
+    "waila:plugins": [
+      {
+        "id": "usefultoolsmod:main",
+        "initializer": "com.stonytark.usefultoolsmod.compat.wthit.UsefulToolsWthitPlugin"
+      }
+    ]
+  }
+}
