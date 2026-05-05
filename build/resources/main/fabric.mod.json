@@ -6,7 +6,7 @@
   "description": "Adds many useful tools, weapons, and armor sets to Minecraft.",
   "authors": ["stonytark"],
   "contact": {},
-  "license": "MIT",
+  "license": "CC0-1.0",
   "icon": "assets/usefultoolsmod/icon.png",
   "environment": "*",
   "entrypoints": {
